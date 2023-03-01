@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Jogos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style the header */
+    header {
+      background-color: rgb(228, 21, 149);
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 30%;
+      height: 300px;
+      /* only for demonstration, should be removed */
+      background: rgb(253, 251, 128);
+      padding: 20px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #181313;
+      height: 300px;
+      /* only for demonstration, should be removed */
+
+
+    }
+
+    .button {
+      border: none;
+      color: white;
+      padding: 50px 100px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .button1 {
+      background-color: rgb(179, 19, 171);
+      color: black;
+      border: 2px solid #4CAF50;
+    }
+
+    .button1:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .button2 {
+      background-color: white;
+      color: black;
+      border: 2px solid #008CBA;
+    }
+
+    .button2:hover {
+      background-color: #008CBA;
+      color: white;
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Style the footer */
+    footer {
+      background-color: rgb(65, 64, 64);
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+
+      nav,
+      article {
+
+        width: 100%;
+        height: auto;
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <header>
+    <h1>Site de Jogos</h1>
+    <h2>Escolha qual Você deseja:</h2>
+  </header>
+
+
+
+  <section>
+    <nav>
+      <p>Confira o <a href="jogo da forca/ctForca.html" target="_self">Jogo da Forca</a>.</p>
+      <p>Confira o <a href="jogo da velha/velha.html" target="_self">Jogo da Velha</a>.</p>
+    </nav>
+
+    <article>
+      <a href='jogo da forca/ctForca.html'><button type="submit" class="button button1">Jogo da Forca</button></a>
+      <a href='jogo da velha/velha.html'><button type="submit" class="button button2">Jogo da Velha</button></a>
+
+    </article>
+  </section>
+  <footer>
+    <h2>Julia Cristina Lopes Coimbra</h2>
+    <p>Alguns dos jogos que criei estudando Html, CSS e Js</p>
+    <p>Estudante de Programação, ainda falta muita coisa para ficar boa </p>
+  </footer>
+
+</body>
+
+</html>
